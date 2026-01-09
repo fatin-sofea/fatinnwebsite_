@@ -744,10 +744,20 @@ body {
   margin-bottom: 60px;
 }
 
+.hobbies-grid,
+.favorites-section,
+.page-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 .hobbies-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 35px;
+  justify-content: center;
 }
 
 .hobby-card {
@@ -756,6 +766,7 @@ body {
   padding: 20px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .hobby-card:hover {
