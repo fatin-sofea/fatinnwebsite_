@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me | Fatin Sofea</title>
+  <link rel="stylesheet" href="style4.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="page-header" data-aos="fade-down">
+<header class="header">
+    <div class="logo">
+        <h1>Fatin Sofea</h1>
+        <span>CREATIVE / STUDENT</span>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+
+  <!-- Page Header -->
+  <header class="page-hero" data-aos="fade-down">
+  <h1 name="top">About Me</h1>
+</header>
+
+
+  <section class="about-detailed-section" data-aos="fade-up">
+  <h3>Get to know more about my background, interests, and passions</h3>
+
+  <!-- Journey -->
+  <div class="about-row" data-aos="fade-right">
+    <img src="images/photo_2026-01-09_20-51-38.jpg" alt="My Journey">
+    <div class="about-text">
+      <h2>My Background</h2>
+      <p>
+        I was born in Kuala Lumpur but currently live in Klang, Selangor. I am the firstborn out of four siblings.
+
+        I am 20 years old this year, and I'm hoping to live a long, happy life. My mother is a teacher, and my father works in the private sector.
+
+        I am an introvert but loud around people I'm comfortable with. People often say I have an RBF, and unfortunately it is true.
+
+        I'm not comfortable being affectionate; hence, my reactions may not be how I really feels.
+      </p>
+    </div>
+  </div>
+
+  <!-- Passions -->
+  <div class="about-row reverse" data-aos="fade-left">
+    <img src="images/photo_2026-01-09_20-37-46.jpg" alt="Passions and Interests">
+    <div class="about-text">
+      <h2>Passions & Interests</h2>
+      <p>
+        I don't realy have passions for a specific thing but I do give it my all when I sets my mind on something.
+        I love driving. You could say that driving is my passion. I learned to drive before I even know how to talk. When I was little, My father used to hold me when drives all the time.
+        Being on the road helps clear my mind when things get heavy, driving around the city at night is my favorite pastime. 
+        Blasting musics with the windows open, cruising on the road is my therapy. I really love cars and how thrilling it would be if I could do this for a living.
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="about-row" data-aos="fade-right">
+    <img src="images/photo_2026-01-09_20-37-49.jpg" alt="Skills">
+    <div class="about-text">
+      <h2>Favorite Drink</h2>
+      <p>
+        Ice chocolate. It's simple really. Why does it have to be matcha or coffee? Ice chocolate is fire, people don't appreciate it enough. I may or may not exaggerated on this matter but yeah my favorite drink is ice chocolate. I do prefer to choose other drinks when eating out but ice chocolate would always be my top choice while exploring a new place.
+      </p>
+    </div>
+  </div>
+
+  <!-- Goals -->
+  <div class="about-row reverse" data-aos="fade-left">
+    <img src="images/photo_2026-01-09_20-51-41.jpg" alt="Goals">
+    <div class="about-text">
+      <h2>Goals & Aspirations</h2>
+      <p>
+        I aspire to be the one woman standing. Improving and stabilize my family with my hard work, giving them the life they deserve using my own blood, sweat and tears is the only reason I'm still alive. I refuse to let myself drown in something that will not be any good to me. I wish my family and friends will be here so I got to spoil them later. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Image Gallery -->
+<section class="about-gallery" data-aos="fade-up">
+  <h2>Moments & Highlights</h2>
+
+  <div class="gallery-grid">
+    <figure onclick="openLightbox(this)">
+      <img src="images/photo_2026-01-09_20-37-58.jpg" alt="Academic Journey" data-caption="Academic Journey">
+      <figcaption>Academic Journey</figcaption>
+    </figure>
+
+    <figure onclick="openLightbox(this)">
+      <img src="images/photo_2026-01-09_20-37-54.jpg" alt="School Graduation" data-caption="Web Development Projects">
+      <figcaption>School Graduation</figcaption>
+    </figure>
+
+    <figure onclick="openLightbox(this)">
+      <img src="images/photo_2026-01-09_20-58-23.jpg" alt="Growing up" data-caption="Creative Design Work">
+      <figcaption>Growing up</figcaption>
+    </figure>
+
+    <figure onclick="openLightbox(this)">
+      <img src="images/photo_2026-01-09_20-58-26.jpg" alt="Team Collaboration" data-caption="Team Collaboration">
+      <figcaption>Team Collaboration</figcaption>
+    </figure>
+
+    
+  
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+  <p id="lightbox-caption"></p>
+</div>
+
+
+  <!-- Back Links -->
+  <div class="back-home" data-aos="fade-up">
+    <a href="index.html">Back to Home</a> | 
+    <a href="#top">Back to Top</a>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <script>
+  function openLightbox(element) {
+    const img = element.querySelector("img");
+    document.getElementById("lightbox-img").src = img.src;
+    document.getElementById("lightbox-caption").textContent = img.dataset.caption;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>

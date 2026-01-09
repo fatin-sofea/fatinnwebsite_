@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Education | Fatin Sofea</title>
+  <link rel="stylesheet" href="style4.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="header" data-aos="fade-down">
+  <div class="logo">
+    <h1>Fatin Sofea</h1>
+    <span>CREATIVE / STUDENT</span>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="education.html">Education</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Page Title -->
+<header class="page-hero" data-aos="fade-down">
+  <h1 name="top">My Education</h1>
+</header>
+
+
+<!-- Education Table -->
+<section class="education-section" data-aos="fade-up">
+  <h3 class="section-subtitle">From Secondary School to University</h3>
+
+  <div class="table-container">
+    <table class="education-table">
+      <thead>
+        <tr>
+          <th>Level</th>
+          <th>School / University</th>
+          <th>Years</th>
+          <th>Achievements / Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Secondary</td>
+          <td>SRA Bukit Kapar Timur</td>
+          <td>2011 – 2017</td>
+          <td>Completed Secondary School</td>
+        </tr>
+        <tr>
+          <td>SK Bukit Kapar</td>
+          <td>2011 – 2017</td>
+          <td>Completed Primary Education</td>
+        </tr>
+        <tr>
+          <td>High School</td>
+          <td>SMK (P) Kapar</td>
+          <td>2018 – 2022</td>
+          <td>SPM – Accounting Stream</td>
+        </tr>
+        <tr>
+          <td>University</td>
+          <td>Universiti Teknologi MARA</td>
+          <td>2023 – Present</td>
+          <td>Diploma in Information Management (GPA 3.7)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Education Timeline -->
+<section class="timeline-section">
+  <h3 class="section-subtitle">My Academic Journey</h3>
+
+  <div class="timeline">
+
+    <div class="timeline-item" data-aos="fade-right">
+      <span class="dot"></span>
+      <h4>Secondary School</h4>
+      <p>Built discipline, curiosity, and a strong learning foundation.</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+      <span class="dot"></span>
+      <h4>High School</h4>
+      <p>Discovered my interest in structure, problem-solving, and leadership.</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <span class="dot"></span>
+      <h4>University</h4>
+      <p>Developing technical skills while growing personally and professionally.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Achievements -->
+<section class="activities-section" data-aos="fade-up">
+  <h3 class="section-subtitle">What I Achieved Throughout The Years</h3>
+
+  <div class="activities-list">
+
+    <div class="achievement">
+      <button class="collapsible">🎓 Accomplished six As for SPM</button>
+      <div class="content">
+        <p>Building self-discipline and focusing more during class to improve my results and successfully achieved better grades than previous tests.</p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <button class="collapsible">🏫 Becoming the School's Prefect.</button>
+      <div class="content">
+        <p>Developed leadership and teamwork through event coordination.</p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <button class="collapsible">💻 Maintaining GPA above 3.00</button>
+      <div class="content">
+        <p>Consistently maintain my GPA to excellence every semester.</p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <button class="collapsible">🤝 Completing Final Year Project Successfully</button>
+      <div class="content">
+        <p>Enhancing team building among classmates and experienced handling an event together.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Reflection -->
+<section class="reflection-section" data-aos="zoom-in">
+  <blockquote>
+    “Each semester shaped not only my academic abilities,
+    but also my confidence, resilience, and passion for learning.”
+  </blockquote>
+</section>
+
+<!-- Education Memories -->
+<section class="memories-section" data-aos="fade-up">
+  <h3 class="section-subtitle">Education Memories</h3>
+
+  <div class="memories-grid">
+    <figure>
+      <img src="images/photo_2026-01-09_21-52-17.jpg">
+      <figcaption>Late nights, big dreams</figcaption>
+    </figure>
+    <figure>
+      <img src="images/photo_2026-01-09_21-40-10.jpg">
+      <figcaption>Learning together</figcaption>
+    </figure>
+    <figure>
+      <img src="images/photo_2026-01-09_20-58-26.jpg">
+      <figcaption>Beyond the classroom</figcaption>
+    </figure>
+    <figure>
+      <img src="images/photo_2026-01-09_21-40-08.jpg">
+      <figcaption>Growth in progress</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Closing -->
+<section class="closing-section" data-aos="fade-up">
+  <p>
+    This educational journey is still ongoing — and I’m excited to see
+    where it leads next.
+  </p>
+</section>
+
+<div class="back-home" data-aos="fade-up">
+  <a href="index.html">Back to Home</a> |
+  <a href="#top">Back to Top</a>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  document.querySelectorAll(".collapsible").forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active-collapsible");
+      const content = btn.nextElementSibling;
+      content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+    });
+  });
+</script>
+
+</body>
+</html>
